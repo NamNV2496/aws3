@@ -36,7 +36,7 @@ public class S3Controller {
 
         String fileName = s3Service.saveToS3(bytes.length, ByteSource.wrap(bytes).openStream());
         String shortLink = s3Service.downloadLinkGenerate(fileName);
-        
+
         s3Service.downloadFile(fileName);
         return "fileName: " + fileName + " ShortLink: " + shortLink;
     }

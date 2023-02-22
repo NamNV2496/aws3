@@ -3,3 +3,12 @@ fptcloud:
     bucket: uploadFolder
     region: sgn09
     expTime: 86400000
+    endpoint: https://s3-sgn09.fptcloud.com:443
+    access_key_id: 00f67554d237da38c90d
+    secret_access_key: 03+c/WDdwdGLKLpMLm3JJP6azOtyhLYC7eVEWWLI
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
