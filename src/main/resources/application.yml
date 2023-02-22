@@ -1,0 +1,5 @@
+fptcloud:
+  s3:
+    bucket: uploadFolder
+    region: sgn09
+    expTime: 86400000
